@@ -282,6 +282,7 @@ button {
 .header-search {
   display: flex;
   align-items: center;
+  position: relative;
   background: var(--gray-50);
   border: 1px solid var(--gray-200);
   border-radius: var(--radius-md);
@@ -293,6 +294,11 @@ button {
   visibility: hidden;
   transform: translateY(-10px);
   transition: all 0.3s ease;
+}
+
+/* Hide any browser extension-injected search shortcuts (e.g. "Ctrl K") */
+.header-search > *:not(input):not(button) {
+  display: none !important;
 }
 
 .header.show-search .header-search {
