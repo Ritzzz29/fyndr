@@ -927,8 +927,8 @@ button {
 }
 
 .similar-products-grid .product-card {
-  min-width: 200px;
-  flex: 0 0 auto;
+  width: 200px;
+  flex: 0 0 200px;
   scroll-snap-align: start;
 }
 
