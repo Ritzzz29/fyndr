@@ -803,7 +803,7 @@ button {
 
 .product-detail-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 450px 1fr;
   gap: var(--space-3xl);
   align-items: start;
 }
@@ -897,8 +897,8 @@ button {
 }
 
 .similar-products-section {
-  margin-top: var(--space-3xl);
-  padding-top: var(--space-xl);
+  margin-top: var(--space-2xl);
+  padding-top: var(--space-lg);
   border-top: 1px solid var(--gray-200);
 }
 
@@ -949,7 +949,6 @@ button {
 
 .comparison-table {
   width: 100%;
-  min-width: 500px;
   border-collapse: separate;
   border-spacing: 0;
   border-radius: var(--radius-md);

@@ -417,9 +417,12 @@ function renderProductDetail(product) {
           ← Back to results
         </div>
         <div class="product-detail-grid">
-          <div class="product-detail-image">
-            <img src="${product.image}" alt="${product.name}">
-            <span class="product-badge product-detail-badge ${badgeClass}">${product.badge}</span>
+          <div class="product-detail-left">
+            <div class="product-detail-image">
+              <img src="${product.image}" alt="${product.name}">
+              <span class="product-badge product-detail-badge ${badgeClass}">${product.badge}</span>
+            </div>
+            ${renderSimilarProducts(product)}
           </div>
           <div class="product-detail-info">
             <div class="product-detail-brand">${product.brand}</div>
@@ -432,7 +435,6 @@ function renderProductDetail(product) {
             ${renderPriceIntelligence(product)}
             ${renderTrendSignal(product)}
             ${renderFyndrInsight(product)}
-            ${renderSimilarProducts(product)}
           </div>
         </div>
       </div>
