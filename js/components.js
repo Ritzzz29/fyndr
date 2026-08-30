@@ -40,6 +40,10 @@ function renderHeader(currentPage) {
       <a href="#/" onclick="navigateTo('home'); closeMobileMenu();">Home</a>
       <a href="#/explore" onclick="navigateTo('explore'); closeMobileMenu();">Explore</a>
       <a href="#/how" onclick="navigateTo('how'); closeMobileMenu();">How Fyndr Works</a>
+      ${typeof currentUser !== 'undefined' && currentUser 
+        ? `<a href="javascript:void(0)" onclick="logOut(); closeMobileMenu();" style="color: var(--pink);">Logout</a>`
+        : `<a href="#/login" onclick="closeMobileMenu();" style="color: var(--purple); font-weight: 600;">Login / Sign Up</a>`
+      }
     </nav>
   `;
 }
@@ -495,7 +499,7 @@ function renderFooter() {
           </div>
           <div class="footer-right">
             <div class="footer-demo">This is a prototype / demo experience.</div>
-            <div class="footer-copy">Â© 2026 fyndr. All rights reserved.</div>
+            <div class="footer-copy">&copy; 2026 fyndr. All rights reserved.</div>
           </div>
         </div>
       </div>
