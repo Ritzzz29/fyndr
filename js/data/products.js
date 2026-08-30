@@ -25,10 +25,10 @@ const FYNDR_PRODUCTS = [
     badge: "Best Price",
     trendSignal: { direction: "up", percentage: 31, period: "30 days" },
     retailers: [
-      { name: "AJIO", price: 849, delivery: "2–3 days", url: "#", rating: { score: 4.0, count: 2727 }, couponDiscount: 25 },
-      { name: "Myntra", price: 899, delivery: "Tomorrow", url: "#", rating: { score: 4.0, count: 1574 }, couponDiscount: 5 },
-      { name: "Amazon", price: 929, delivery: "2 days", url: "#", rating: { score: 4.0, count: 1458 }, couponDiscount: 5 },
-      { name: "Flipkart", price: 949, delivery: "2–3 days", url: "#", rating: { score: 4.7, count: 2938 }, couponDiscount: 10 }
+      { name: "AJIO", price: 849, delivery: "2–3 days", url: "#", rating: { score: 4.0, count: 2727 }, couponDiscount: 25, dealerName: "Official Store", isVerifiedDealer: false },
+      { name: "Myntra", price: 899, delivery: "Tomorrow", url: "#", rating: { score: 4.0, count: 1574 }, couponDiscount: 5, dealerName: "RetailNet", isVerifiedDealer: true },
+      { name: "Amazon", price: 929, delivery: "2 days", url: "#", rating: { score: 4.0, count: 1458 }, couponDiscount: 5, dealerName: "SuperComNet", isVerifiedDealer: true },
+      { name: "Flipkart", price: 949, delivery: "2–3 days", url: "#", rating: { score: 4.7, count: 2938 }, couponDiscount: 10, dealerName: "Apparel Hub", isVerifiedDealer: false }
     ],
     priceHistory: [
       { date: "2026-05-12", price: 1199 },
@@ -66,10 +66,10 @@ const FYNDR_PRODUCTS = [
     badge: "Popular",
     trendSignal: { direction: "up", percentage: 18, period: "30 days" },
     retailers: [
-      { name: "Myntra", price: 1299, delivery: "Tomorrow", url: "#", rating: { score: 4.7, count: 2851 }, couponDiscount: 15 },
-      { name: "AJIO", price: 1349, delivery: "2–3 days", url: "#", rating: { score: 4.2, count: 964 }, couponDiscount: 5 },
-      { name: "Flipkart", price: 1399, delivery: "2 days", url: "#", rating: { score: 4.8, count: 2001 }, couponDiscount: 5 },
-      { name: "Tata CLiQ", price: 1449, delivery: "3–4 days", url: "#", rating: { score: 4.3, count: 892 }, couponDiscount: 5 }
+      { name: "Myntra", price: 1299, delivery: "Tomorrow", url: "#", rating: { score: 4.7, count: 2851 }, couponDiscount: 15, dealerName: "CityMart Retail", isVerifiedDealer: true },
+      { name: "AJIO", price: 1349, delivery: "2–3 days", url: "#", rating: { score: 4.2, count: 964 }, couponDiscount: 5, dealerName: "TrueStyle", isVerifiedDealer: true },
+      { name: "Flipkart", price: 1399, delivery: "2 days", url: "#", rating: { score: 4.8, count: 2001 }, couponDiscount: 5, dealerName: "Official Store", isVerifiedDealer: false },
+      { name: "Tata CLiQ", price: 1449, delivery: "3–4 days", url: "#", rating: { score: 4.3, count: 892 }, couponDiscount: 5, dealerName: "RetailNet", isVerifiedDealer: true }
     ],
     priceHistory: [
       { date: "2026-05-12", price: 1799 },
@@ -107,9 +107,9 @@ const FYNDR_PRODUCTS = [
     badge: "Trending",
     trendSignal: { direction: "up", percentage: 42, period: "30 days" },
     retailers: [
-      { name: "AJIO", price: 1079, delivery: "2–3 days", url: "#", rating: { score: 4.6, count: 1857 }, couponDiscount: 20 },
-      { name: "Myntra", price: 1099, delivery: "Tomorrow", url: "#", rating: { score: 4.7, count: 2671 }, couponDiscount: 20 },
-      { name: "Amazon", price: 1149, delivery: "2 days", url: "#", rating: { score: 4.3, count: 588 }, couponDiscount: 5 }
+      { name: "AJIO", price: 1079, delivery: "2–3 days", url: "#", rating: { score: 4.6, count: 1857 }, couponDiscount: 20, dealerName: "SuperComNet", isVerifiedDealer: true },
+      { name: "Myntra", price: 1099, delivery: "Tomorrow", url: "#", rating: { score: 4.7, count: 2671 }, couponDiscount: 20, dealerName: "Apparel Hub", isVerifiedDealer: false },
+      { name: "Amazon", price: 1149, delivery: "2 days", url: "#", rating: { score: 4.3, count: 588 }, couponDiscount: 5, dealerName: "CityMart Retail", isVerifiedDealer: true }
     ],
     priceHistory: [
       { date: "2026-05-12", price: 1599 },
@@ -147,10 +147,10 @@ const FYNDR_PRODUCTS = [
     badge: "Big Drop",
     trendSignal: { direction: "up", percentage: 12, period: "30 days" },
     retailers: [
-      { name: "Flipkart", price: 1149, delivery: "2 days", url: "#", rating: { score: 4.0, count: 1453 }, couponDiscount: 5 },
-      { name: "Myntra", price: 1199, delivery: "Tomorrow", url: "#", rating: { score: 4.0, count: 175 }, couponDiscount: 25 },
-      { name: "AJIO", price: 1249, delivery: "2–3 days", url: "#", rating: { score: 4.8, count: 397 }, couponDiscount: 15 },
-      { name: "Amazon", price: 1299, delivery: "2 days", url: "#", rating: { score: 4.0, count: 1295 }, couponDiscount: 10 }
+      { name: "Flipkart", price: 1149, delivery: "2 days", url: "#", rating: { score: 4.0, count: 1453 }, couponDiscount: 5, dealerName: "TrueStyle", isVerifiedDealer: true },
+      { name: "Myntra", price: 1199, delivery: "Tomorrow", url: "#", rating: { score: 4.0, count: 175 }, couponDiscount: 25, dealerName: "Official Store", isVerifiedDealer: false },
+      { name: "AJIO", price: 1249, delivery: "2–3 days", url: "#", rating: { score: 4.8, count: 397 }, couponDiscount: 15, dealerName: "RetailNet", isVerifiedDealer: true },
+      { name: "Amazon", price: 1299, delivery: "2 days", url: "#", rating: { score: 4.0, count: 1295 }, couponDiscount: 10, dealerName: "SuperComNet", isVerifiedDealer: true }
     ],
     priceHistory: [
       { date: "2026-05-12", price: 1999 },
@@ -190,10 +190,10 @@ const FYNDR_PRODUCTS = [
     badge: "Trending",
     trendSignal: { direction: "up", percentage: 27, period: "30 days" },
     retailers: [
-      { name: "Myntra", price: 1679, delivery: "Tomorrow", url: "#", rating: { score: 4.8, count: 450 }, couponDiscount: 20 },
-      { name: "AJIO", price: 1749, delivery: "2–3 days", url: "#", rating: { score: 4.1, count: 394 }, couponDiscount: 25 },
-      { name: "Amazon", price: 1799, delivery: "2 days", url: "#", rating: { score: 4.1, count: 1247 }, couponDiscount: 5 },
-      { name: "Flipkart", price: 1849, delivery: "3 days", url: "#", rating: { score: 4.8, count: 2756 }, couponDiscount: 25 }
+      { name: "Myntra", price: 1679, delivery: "Tomorrow", url: "#", rating: { score: 4.8, count: 450 }, couponDiscount: 20, dealerName: "Apparel Hub", isVerifiedDealer: false },
+      { name: "AJIO", price: 1749, delivery: "2–3 days", url: "#", rating: { score: 4.1, count: 394 }, couponDiscount: 25, dealerName: "CityMart Retail", isVerifiedDealer: true },
+      { name: "Amazon", price: 1799, delivery: "2 days", url: "#", rating: { score: 4.1, count: 1247 }, couponDiscount: 5, dealerName: "TrueStyle", isVerifiedDealer: true },
+      { name: "Flipkart", price: 1849, delivery: "3 days", url: "#", rating: { score: 4.8, count: 2756 }, couponDiscount: 25, dealerName: "Official Store", isVerifiedDealer: false }
     ],
     priceHistory: [
       { date: "2026-05-12", price: 2499 },
@@ -231,9 +231,9 @@ const FYNDR_PRODUCTS = [
     badge: "Best Price",
     trendSignal: { direction: "up", percentage: 15, period: "30 days" },
     retailers: [
-      { name: "AJIO", price: 1749, delivery: "2–3 days", url: "#", rating: { score: 4.2, count: 1364 }, couponDiscount: 25 },
-      { name: "Myntra", price: 1799, delivery: "Tomorrow", url: "#", rating: { score: 4.3, count: 1379 }, couponDiscount: 5 },
-      { name: "Tata CLiQ", price: 1899, delivery: "3–4 days", url: "#", rating: { score: 4.0, count: 1837 }, couponDiscount: 25 }
+      { name: "AJIO", price: 1749, delivery: "2–3 days", url: "#", rating: { score: 4.2, count: 1364 }, couponDiscount: 25, dealerName: "RetailNet", isVerifiedDealer: true },
+      { name: "Myntra", price: 1799, delivery: "Tomorrow", url: "#", rating: { score: 4.3, count: 1379 }, couponDiscount: 5, dealerName: "SuperComNet", isVerifiedDealer: true },
+      { name: "Tata CLiQ", price: 1899, delivery: "3–4 days", url: "#", rating: { score: 4.0, count: 1837 }, couponDiscount: 25, dealerName: "Apparel Hub", isVerifiedDealer: false }
     ],
     priceHistory: [
       { date: "2026-05-12", price: 2999 },
@@ -271,10 +271,10 @@ const FYNDR_PRODUCTS = [
     badge: "Popular",
     trendSignal: { direction: "up", percentage: 8, period: "30 days" },
     retailers: [
-      { name: "Myntra", price: 1949, delivery: "Tomorrow", url: "#", rating: { score: 3.9, count: 1745 }, couponDiscount: 20 },
-      { name: "AJIO", price: 1999, delivery: "2–3 days", url: "#", rating: { score: 3.9, count: 78 }, couponDiscount: 10 },
-      { name: "Amazon", price: 2099, delivery: "2 days", url: "#", rating: { score: 4.6, count: 1408 }, couponDiscount: 20 },
-      { name: "Flipkart", price: 2149, delivery: "2–3 days", url: "#", rating: { score: 4.1, count: 2298 }, couponDiscount: 5 }
+      { name: "Myntra", price: 1949, delivery: "Tomorrow", url: "#", rating: { score: 3.9, count: 1745 }, couponDiscount: 20, dealerName: "CityMart Retail", isVerifiedDealer: true },
+      { name: "AJIO", price: 1999, delivery: "2–3 days", url: "#", rating: { score: 3.9, count: 78 }, couponDiscount: 10, dealerName: "TrueStyle", isVerifiedDealer: true },
+      { name: "Amazon", price: 2099, delivery: "2 days", url: "#", rating: { score: 4.6, count: 1408 }, couponDiscount: 20, dealerName: "Official Store", isVerifiedDealer: false },
+      { name: "Flipkart", price: 2149, delivery: "2–3 days", url: "#", rating: { score: 4.1, count: 2298 }, couponDiscount: 5, dealerName: "RetailNet", isVerifiedDealer: true }
     ],
     priceHistory: [
       { date: "2026-05-12", price: 2799 },
@@ -312,9 +312,9 @@ const FYNDR_PRODUCTS = [
     badge: "Trending",
     trendSignal: { direction: "up", percentage: 35, period: "30 days" },
     retailers: [
-      { name: "Myntra", price: 1199, delivery: "Tomorrow", url: "#", rating: { score: 3.8, count: 2870 }, couponDiscount: 5 },
-      { name: "Amazon", price: 1249, delivery: "2 days", url: "#", rating: { score: 3.8, count: 1271 }, couponDiscount: 20 },
-      { name: "Flipkart", price: 1299, delivery: "2–3 days", url: "#", rating: { score: 4.8, count: 1082 }, couponDiscount: 25 }
+      { name: "Myntra", price: 1199, delivery: "Tomorrow", url: "#", rating: { score: 3.8, count: 2870 }, couponDiscount: 5, dealerName: "SuperComNet", isVerifiedDealer: true },
+      { name: "Amazon", price: 1249, delivery: "2 days", url: "#", rating: { score: 3.8, count: 1271 }, couponDiscount: 20, dealerName: "Apparel Hub", isVerifiedDealer: false },
+      { name: "Flipkart", price: 1299, delivery: "2–3 days", url: "#", rating: { score: 4.8, count: 1082 }, couponDiscount: 25, dealerName: "CityMart Retail", isVerifiedDealer: true }
     ],
     priceHistory: [
       { date: "2026-05-12", price: 1799 },
@@ -354,10 +354,10 @@ const FYNDR_PRODUCTS = [
     badge: "Popular",
     trendSignal: { direction: "up", percentage: 9, period: "30 days" },
     retailers: [
-      { name: "Amazon", price: 849, delivery: "2 days", url: "#", rating: { score: 3.9, count: 629 }, couponDiscount: 10 },
-      { name: "Flipkart", price: 879, delivery: "2–3 days", url: "#", rating: { score: 4.7, count: 246 }, couponDiscount: 20 },
-      { name: "Myntra", price: 899, delivery: "Tomorrow", url: "#", rating: { score: 4.4, count: 2711 }, couponDiscount: 5 },
-      { name: "AJIO", price: 929, delivery: "2–3 days", url: "#", rating: { score: 4.2, count: 402 }, couponDiscount: 10 }
+      { name: "Amazon", price: 849, delivery: "2 days", url: "#", rating: { score: 3.9, count: 629 }, couponDiscount: 10, dealerName: "TrueStyle", isVerifiedDealer: true },
+      { name: "Flipkart", price: 879, delivery: "2–3 days", url: "#", rating: { score: 4.7, count: 246 }, couponDiscount: 20, dealerName: "Official Store", isVerifiedDealer: false },
+      { name: "Myntra", price: 899, delivery: "Tomorrow", url: "#", rating: { score: 4.4, count: 2711 }, couponDiscount: 5, dealerName: "RetailNet", isVerifiedDealer: true },
+      { name: "AJIO", price: 929, delivery: "2–3 days", url: "#", rating: { score: 4.2, count: 402 }, couponDiscount: 10, dealerName: "SuperComNet", isVerifiedDealer: true }
     ],
     priceHistory: [
       { date: "2026-05-12", price: 1299 },
@@ -395,9 +395,9 @@ const FYNDR_PRODUCTS = [
     badge: "Big Drop",
     trendSignal: { direction: "down", percentage: 5, period: "30 days" },
     retailers: [
-      { name: "Myntra", price: 649, delivery: "Tomorrow", url: "#", rating: { score: 4.9, count: 781 }, couponDiscount: 10 },
-      { name: "AJIO", price: 699, delivery: "2–3 days", url: "#", rating: { score: 4.8, count: 1236 }, couponDiscount: 25 },
-      { name: "Flipkart", price: 749, delivery: "2 days", url: "#", rating: { score: 4.8, count: 210 }, couponDiscount: 15 }
+      { name: "Myntra", price: 649, delivery: "Tomorrow", url: "#", rating: { score: 4.9, count: 781 }, couponDiscount: 10, dealerName: "Apparel Hub", isVerifiedDealer: false },
+      { name: "AJIO", price: 699, delivery: "2–3 days", url: "#", rating: { score: 4.8, count: 1236 }, couponDiscount: 25, dealerName: "CityMart Retail", isVerifiedDealer: true },
+      { name: "Flipkart", price: 749, delivery: "2 days", url: "#", rating: { score: 4.8, count: 210 }, couponDiscount: 15, dealerName: "TrueStyle", isVerifiedDealer: true }
     ],
     priceHistory: [
       { date: "2026-05-12", price: 1099 },
@@ -435,10 +435,10 @@ const FYNDR_PRODUCTS = [
     badge: "Best Price",
     trendSignal: { direction: "up", percentage: 14, period: "30 days" },
     retailers: [
-      { name: "Amazon", price: 749, delivery: "Tomorrow", url: "#", rating: { score: 4.0, count: 297 }, couponDiscount: 10 },
-      { name: "Flipkart", price: 779, delivery: "2 days", url: "#", rating: { score: 4.0, count: 2046 }, couponDiscount: 15 },
-      { name: "Myntra", price: 799, delivery: "Tomorrow", url: "#", rating: { score: 4.4, count: 1319 }, couponDiscount: 25 },
-      { name: "AJIO", price: 849, delivery: "2–3 days", url: "#", rating: { score: 4.9, count: 2002 }, couponDiscount: 5 }
+      { name: "Amazon", price: 749, delivery: "Tomorrow", url: "#", rating: { score: 4.0, count: 297 }, couponDiscount: 10, dealerName: "Official Store", isVerifiedDealer: false },
+      { name: "Flipkart", price: 779, delivery: "2 days", url: "#", rating: { score: 4.0, count: 2046 }, couponDiscount: 15, dealerName: "RetailNet", isVerifiedDealer: true },
+      { name: "Myntra", price: 799, delivery: "Tomorrow", url: "#", rating: { score: 4.4, count: 1319 }, couponDiscount: 25, dealerName: "SuperComNet", isVerifiedDealer: true },
+      { name: "AJIO", price: 849, delivery: "2–3 days", url: "#", rating: { score: 4.9, count: 2002 }, couponDiscount: 5, dealerName: "Apparel Hub", isVerifiedDealer: false }
     ],
     priceHistory: [
       { date: "2026-05-12", price: 1199 },
@@ -476,10 +476,10 @@ const FYNDR_PRODUCTS = [
     badge: "Popular",
     trendSignal: { direction: "up", percentage: 6, period: "30 days" },
     retailers: [
-      { name: "Myntra", price: 1319, delivery: "Tomorrow", url: "#", rating: { score: 4.2, count: 1055 }, couponDiscount: 10 },
-      { name: "Amazon", price: 1349, delivery: "2 days", url: "#", rating: { score: 4.8, count: 943 }, couponDiscount: 5 },
-      { name: "Flipkart", price: 1399, delivery: "2 days", url: "#", rating: { score: 4.8, count: 895 }, couponDiscount: 5 },
-      { name: "Tata CLiQ", price: 1449, delivery: "3–4 days", url: "#", rating: { score: 3.8, count: 1016 }, couponDiscount: 20 }
+      { name: "Myntra", price: 1319, delivery: "Tomorrow", url: "#", rating: { score: 4.2, count: 1055 }, couponDiscount: 10, dealerName: "CityMart Retail", isVerifiedDealer: true },
+      { name: "Amazon", price: 1349, delivery: "2 days", url: "#", rating: { score: 4.8, count: 943 }, couponDiscount: 5, dealerName: "TrueStyle", isVerifiedDealer: true },
+      { name: "Flipkart", price: 1399, delivery: "2 days", url: "#", rating: { score: 4.8, count: 895 }, couponDiscount: 5, dealerName: "Official Store", isVerifiedDealer: false },
+      { name: "Tata CLiQ", price: 1449, delivery: "3–4 days", url: "#", rating: { score: 3.8, count: 1016 }, couponDiscount: 20, dealerName: "RetailNet", isVerifiedDealer: true }
     ],
     priceHistory: [
       { date: "2026-05-12", price: 1899 },
@@ -519,10 +519,10 @@ const FYNDR_PRODUCTS = [
     badge: "Popular",
     trendSignal: { direction: "up", percentage: 11, period: "30 days" },
     retailers: [
-      { name: "Amazon", price: 1799, delivery: "Tomorrow", url: "#", rating: { score: 3.8, count: 2995 }, couponDiscount: 15 },
-      { name: "Myntra", price: 1849, delivery: "Tomorrow", url: "#", rating: { score: 4.6, count: 541 }, couponDiscount: 15 },
-      { name: "Flipkart", price: 1899, delivery: "2 days", url: "#", rating: { score: 4.5, count: 2516 }, couponDiscount: 5 },
-      { name: "AJIO", price: 1949, delivery: "2–3 days", url: "#", rating: { score: 3.9, count: 1079 }, couponDiscount: 20 }
+      { name: "Amazon", price: 1799, delivery: "Tomorrow", url: "#", rating: { score: 3.8, count: 2995 }, couponDiscount: 15, dealerName: "SuperComNet", isVerifiedDealer: true },
+      { name: "Myntra", price: 1849, delivery: "Tomorrow", url: "#", rating: { score: 4.6, count: 541 }, couponDiscount: 15, dealerName: "Apparel Hub", isVerifiedDealer: false },
+      { name: "Flipkart", price: 1899, delivery: "2 days", url: "#", rating: { score: 4.5, count: 2516 }, couponDiscount: 5, dealerName: "CityMart Retail", isVerifiedDealer: true },
+      { name: "AJIO", price: 1949, delivery: "2–3 days", url: "#", rating: { score: 3.9, count: 1079 }, couponDiscount: 20, dealerName: "TrueStyle", isVerifiedDealer: true }
     ],
     priceHistory: [
       { date: "2026-05-12", price: 2599 },
@@ -560,9 +560,9 @@ const FYNDR_PRODUCTS = [
     badge: "Trending",
     trendSignal: { direction: "up", percentage: 38, period: "30 days" },
     retailers: [
-      { name: "Myntra", price: 999, delivery: "Tomorrow", url: "#", rating: { score: 4.4, count: 1610 }, couponDiscount: 10 },
-      { name: "AJIO", price: 1049, delivery: "2–3 days", url: "#", rating: { score: 4.8, count: 1069 }, couponDiscount: 25 },
-      { name: "Amazon", price: 1099, delivery: "2 days", url: "#", rating: { score: 4.5, count: 668 }, couponDiscount: 10 }
+      { name: "Myntra", price: 999, delivery: "Tomorrow", url: "#", rating: { score: 4.4, count: 1610 }, couponDiscount: 10, dealerName: "Official Store", isVerifiedDealer: false },
+      { name: "AJIO", price: 1049, delivery: "2–3 days", url: "#", rating: { score: 4.8, count: 1069 }, couponDiscount: 25, dealerName: "RetailNet", isVerifiedDealer: true },
+      { name: "Amazon", price: 1099, delivery: "2 days", url: "#", rating: { score: 4.5, count: 668 }, couponDiscount: 10, dealerName: "SuperComNet", isVerifiedDealer: true }
     ],
     priceHistory: [
       { date: "2026-05-12", price: 1699 },
@@ -600,10 +600,10 @@ const FYNDR_PRODUCTS = [
     badge: "Best Price",
     trendSignal: { direction: "down", percentage: 3, period: "30 days" },
     retailers: [
-      { name: "Flipkart", price: 1249, delivery: "2 days", url: "#", rating: { score: 4.8, count: 2921 }, couponDiscount: 25 },
-      { name: "Amazon", price: 1299, delivery: "Tomorrow", url: "#", rating: { score: 4.5, count: 2389 }, couponDiscount: 20 },
-      { name: "Myntra", price: 1349, delivery: "Tomorrow", url: "#", rating: { score: 4.1, count: 1365 }, couponDiscount: 10 },
-      { name: "AJIO", price: 1399, delivery: "2–3 days", url: "#", rating: { score: 4.0, count: 2517 }, couponDiscount: 15 }
+      { name: "Flipkart", price: 1249, delivery: "2 days", url: "#", rating: { score: 4.8, count: 2921 }, couponDiscount: 25, dealerName: "Apparel Hub", isVerifiedDealer: false },
+      { name: "Amazon", price: 1299, delivery: "Tomorrow", url: "#", rating: { score: 4.5, count: 2389 }, couponDiscount: 20, dealerName: "CityMart Retail", isVerifiedDealer: true },
+      { name: "Myntra", price: 1349, delivery: "Tomorrow", url: "#", rating: { score: 4.1, count: 1365 }, couponDiscount: 10, dealerName: "TrueStyle", isVerifiedDealer: true },
+      { name: "AJIO", price: 1399, delivery: "2–3 days", url: "#", rating: { score: 4.0, count: 2517 }, couponDiscount: 15, dealerName: "Official Store", isVerifiedDealer: false }
     ],
     priceHistory: [
       { date: "2026-05-12", price: 2199 },
@@ -641,10 +641,10 @@ const FYNDR_PRODUCTS = [
     badge: "Big Drop",
     trendSignal: { direction: "up", percentage: 22, period: "30 days" },
     retailers: [
-      { name: "AJIO", price: 1399, delivery: "2–3 days", url: "#", rating: { score: 4.4, count: 1650 }, couponDiscount: 25 },
-      { name: "Myntra", price: 1449, delivery: "Tomorrow", url: "#", rating: { score: 3.9, count: 784 }, couponDiscount: 20 },
-      { name: "Amazon", price: 1499, delivery: "2 days", url: "#", rating: { score: 3.9, count: 211 }, couponDiscount: 5 },
-      { name: "Flipkart", price: 1549, delivery: "2–3 days", url: "#", rating: { score: 4.5, count: 1487 }, couponDiscount: 20 }
+      { name: "AJIO", price: 1399, delivery: "2–3 days", url: "#", rating: { score: 4.4, count: 1650 }, couponDiscount: 25, dealerName: "RetailNet", isVerifiedDealer: true },
+      { name: "Myntra", price: 1449, delivery: "Tomorrow", url: "#", rating: { score: 3.9, count: 784 }, couponDiscount: 20, dealerName: "SuperComNet", isVerifiedDealer: true },
+      { name: "Amazon", price: 1499, delivery: "2 days", url: "#", rating: { score: 3.9, count: 211 }, couponDiscount: 5, dealerName: "Apparel Hub", isVerifiedDealer: false },
+      { name: "Flipkart", price: 1549, delivery: "2–3 days", url: "#", rating: { score: 4.5, count: 1487 }, couponDiscount: 20, dealerName: "CityMart Retail", isVerifiedDealer: true }
     ],
     priceHistory: [
       { date: "2026-05-12", price: 2499 },
@@ -684,10 +684,10 @@ const FYNDR_PRODUCTS = [
     badge: "Best Price",
     trendSignal: { direction: "up", percentage: 19, period: "30 days" },
     retailers: [
-      { name: "AJIO", price: 649, delivery: "2–3 days", url: "#", rating: { score: 4.6, count: 666 }, couponDiscount: 20 },
-      { name: "Myntra", price: 679, delivery: "Tomorrow", url: "#", rating: { score: 4.0, count: 1453 }, couponDiscount: 5 },
-      { name: "Amazon", price: 699, delivery: "2 days", url: "#", rating: { score: 4.3, count: 1940 }, couponDiscount: 5 },
-      { name: "Flipkart", price: 749, delivery: "2–3 days", url: "#", rating: { score: 4.3, count: 1361 }, couponDiscount: 5 }
+      { name: "AJIO", price: 649, delivery: "2–3 days", url: "#", rating: { score: 4.6, count: 666 }, couponDiscount: 20, dealerName: "TrueStyle", isVerifiedDealer: true },
+      { name: "Myntra", price: 679, delivery: "Tomorrow", url: "#", rating: { score: 4.0, count: 1453 }, couponDiscount: 5, dealerName: "Official Store", isVerifiedDealer: false },
+      { name: "Amazon", price: 699, delivery: "2 days", url: "#", rating: { score: 4.3, count: 1940 }, couponDiscount: 5, dealerName: "RetailNet", isVerifiedDealer: true },
+      { name: "Flipkart", price: 749, delivery: "2–3 days", url: "#", rating: { score: 4.3, count: 1361 }, couponDiscount: 5, dealerName: "SuperComNet", isVerifiedDealer: true }
     ],
     priceHistory: [
       { date: "2026-05-12", price: 1099 },
@@ -725,9 +725,9 @@ const FYNDR_PRODUCTS = [
     badge: "Trending",
     trendSignal: { direction: "up", percentage: 45, period: "30 days" },
     retailers: [
-      { name: "Myntra", price: 499, delivery: "Tomorrow", url: "#", rating: { score: 4.4, count: 1976 }, couponDiscount: 5 },
-      { name: "Amazon", price: 529, delivery: "2 days", url: "#", rating: { score: 4.2, count: 1530 }, couponDiscount: 10 },
-      { name: "Flipkart", price: 549, delivery: "2 days", url: "#", rating: { score: 4.0, count: 1762 }, couponDiscount: 15 }
+      { name: "Myntra", price: 499, delivery: "Tomorrow", url: "#", rating: { score: 4.4, count: 1976 }, couponDiscount: 5, dealerName: "Apparel Hub", isVerifiedDealer: false },
+      { name: "Amazon", price: 529, delivery: "2 days", url: "#", rating: { score: 4.2, count: 1530 }, couponDiscount: 10, dealerName: "CityMart Retail", isVerifiedDealer: true },
+      { name: "Flipkart", price: 549, delivery: "2 days", url: "#", rating: { score: 4.0, count: 1762 }, couponDiscount: 15, dealerName: "TrueStyle", isVerifiedDealer: true }
     ],
     priceHistory: [
       { date: "2026-05-12", price: 849 },
@@ -765,9 +765,9 @@ const FYNDR_PRODUCTS = [
     badge: "Popular",
     trendSignal: { direction: "up", percentage: 16, period: "30 days" },
     retailers: [
-      { name: "Myntra", price: 1499, delivery: "Tomorrow", url: "#", rating: { score: 3.9, count: 182 }, couponDiscount: 10 },
-      { name: "AJIO", price: 1549, delivery: "2–3 days", url: "#", rating: { score: 4.0, count: 1436 }, couponDiscount: 20 },
-      { name: "Tata CLiQ", price: 1599, delivery: "3–4 days", url: "#", rating: { score: 3.9, count: 1702 }, couponDiscount: 15 }
+      { name: "Myntra", price: 1499, delivery: "Tomorrow", url: "#", rating: { score: 3.9, count: 182 }, couponDiscount: 10, dealerName: "Official Store", isVerifiedDealer: false },
+      { name: "AJIO", price: 1549, delivery: "2–3 days", url: "#", rating: { score: 4.0, count: 1436 }, couponDiscount: 20, dealerName: "RetailNet", isVerifiedDealer: true },
+      { name: "Tata CLiQ", price: 1599, delivery: "3–4 days", url: "#", rating: { score: 3.9, count: 1702 }, couponDiscount: 15, dealerName: "SuperComNet", isVerifiedDealer: true }
     ],
     priceHistory: [
       { date: "2026-05-12", price: 2299 },
@@ -805,10 +805,10 @@ const FYNDR_PRODUCTS = [
     badge: "Big Drop",
     trendSignal: { direction: "up", percentage: 52, period: "30 days" },
     retailers: [
-      { name: "Myntra", price: 399, delivery: "Tomorrow", url: "#", rating: { score: 4.0, count: 539 }, couponDiscount: 10 },
-      { name: "Amazon", price: 429, delivery: "2 days", url: "#", rating: { score: 3.9, count: 72 }, couponDiscount: 10 },
-      { name: "Flipkart", price: 449, delivery: "2 days", url: "#", rating: { score: 4.6, count: 1630 }, couponDiscount: 25 },
-      { name: "AJIO", price: 469, delivery: "2–3 days", url: "#", rating: { score: 3.9, count: 2934 }, couponDiscount: 5 }
+      { name: "Myntra", price: 399, delivery: "Tomorrow", url: "#", rating: { score: 4.0, count: 539 }, couponDiscount: 10, dealerName: "Apparel Hub", isVerifiedDealer: false },
+      { name: "Amazon", price: 429, delivery: "2 days", url: "#", rating: { score: 3.9, count: 72 }, couponDiscount: 10, dealerName: "CityMart Retail", isVerifiedDealer: true },
+      { name: "Flipkart", price: 449, delivery: "2 days", url: "#", rating: { score: 4.6, count: 1630 }, couponDiscount: 25, dealerName: "TrueStyle", isVerifiedDealer: true },
+      { name: "AJIO", price: 469, delivery: "2–3 days", url: "#", rating: { score: 3.9, count: 2934 }, couponDiscount: 5, dealerName: "Official Store", isVerifiedDealer: false }
     ],
     priceHistory: [
       { date: "2026-05-12", price: 699 },
@@ -915,3 +915,4 @@ function getSavingsAmount(product) {
   if (!lowest || !highest) return 0;
   return highest.price - lowest.price;
 }
+

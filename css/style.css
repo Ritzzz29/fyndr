@@ -883,6 +883,55 @@ button {
   margin-bottom: var(--space-2xl);
 }
 
+.verified-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--success);
+  margin-left: 4px;
+  vertical-align: middle;
+}
+
+.dealer {
+  white-space: nowrap;
+}
+
+.similar-products-section {
+  margin-top: var(--space-3xl);
+  padding-top: var(--space-xl);
+  border-top: 1px solid var(--gray-200);
+}
+
+.similar-products-section h3 {
+  font-size: 1.25rem;
+  margin-bottom: var(--space-lg);
+  color: var(--dark);
+}
+
+.similar-products-grid {
+  display: flex;
+  gap: var(--space-lg);
+  overflow-x: auto;
+  padding-bottom: var(--space-md);
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+.similar-products-grid::-webkit-scrollbar {
+  height: 6px;
+}
+
+.similar-products-grid::-webkit-scrollbar-thumb {
+  background: var(--gray-300);
+  border-radius: var(--radius-full);
+}
+
+.similar-products-grid .product-card {
+  min-width: 200px;
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+}
+
 .comparison-title {
   font-size: 1.15rem;
   font-weight: 700;

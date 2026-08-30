@@ -192,9 +192,21 @@ function renderRetailerTable(product) {
         priceHtml = `<span class="original-price" style="text-decoration: line-through; color: var(--gray-400); font-size: 0.85em; margin-right: 4px;">₹${r.price.toLocaleString('en-IN')}</span><span class="final-price" style="color: var(--success); font-weight: 700;">₹${r.effectivePrice.toLocaleString('en-IN')}</span>`;
     }
 
+    // Dealer string
+    let dealerHtml = r.dealerName || 'Unknown Dealer';
+    if (r.isVerifiedDealer) {
+      dealerHtml += ` <span class="verified-badge" title="Verified by Fyndr — consistent quality guaranteed.">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+          <polyline points="22 4 12 14.01 9 11.01"></polyline>
+        </svg>
+      </span>`;
+    }
+
     return `
       <tr class="${isBest ? 'best-row' : ''}">
         <td class="retailer-name">${isBest ? '🏆 ' : ''}${r.name}</td>
+        <td class="dealer">${dealerHtml}</td>
         <td class="rating">${ratingHtml}</td>
         <td class="price">${priceHtml}</td>
         <td class="delivery">${r.delivery}</td>
@@ -251,6 +263,7 @@ function renderRetailerTable(product) {
           <thead>
             <tr>
               <th>Marketplace</th>
+              <th>Sold By</th>
               <th>Rating</th>
               <th>Price</th>
               <th>Delivery</th>
@@ -419,6 +432,7 @@ function renderProductDetail(product) {
             ${renderPriceIntelligence(product)}
             ${renderTrendSignal(product)}
             ${renderFyndrInsight(product)}
+            ${renderSimilarProducts(product)}
           </div>
         </div>
       </div>
@@ -426,7 +440,22 @@ function renderProductDetail(product) {
   `;
 }
 
-/* ── HOW IT WORKS SECTION (Homepage) ── */
+/* 🛍 SIMILAR PRODUCTS */
+function renderSimilarProducts(currentProduct) {
+  const similar = FYNDR_PRODUCTS.filter(p => p.category === currentProduct.category && p.id !== currentProduct.id).slice(0, 4);
+  if (similar.length === 0) return '';
+  
+  return `
+    <div class="similar-products-section">
+      <h3>You Might Also Like</h3>
+      <div class="similar-products-grid">
+        ${similar.map(p => renderProductCard(p)).join('')}
+      </div>
+    </div>
+  `;
+}
+
+/* ⚙ HOW IT WORKS SECTION (Homepage) ⚙ */
 function renderHowItWorks() {
   return `
     <section class="how-it-works">
