@@ -790,6 +790,10 @@ button {
   align-items: start;
 }
 
+.product-detail-grid > * {
+  min-width: 0;
+}
+
 .product-detail-image {
   border-radius: var(--radius-lg);
   overflow: hidden;
@@ -799,8 +803,10 @@ button {
 
 .product-detail-image img {
   width: 100%;
-  aspect-ratio: 3 / 4;
+  height: auto;
+  max-height: 50vh;
   object-fit: contain;
+  display: block;
 }
 
 .product-detail-badge {
@@ -1050,8 +1056,10 @@ button {
   padding: var(--space-md);
   border: 1px solid var(--gray-200);
   margin-bottom: var(--space-md);
-  position: relative;
   height: 220px;
+  position: relative;
+  width: 100%;
+  min-width: 0;
 }
 
 .chart-container canvas {
