@@ -237,18 +237,20 @@ function renderRetailerTable(product) {
   return `
     <div class="comparison-section">
       <h3 class="comparison-title">🛒 Where can I buy it?</h3>
-      <table class="comparison-table">
-        <thead>
-          <tr>
-            <th>Marketplace</th>
-            <th>Rating</th>
-            <th>Price</th>
-            <th>Delivery</th>
-            <th>Action</th>
-          </tr>
-        </thead>
-        <tbody>${rows}</tbody>
-      </table>
+      <div class="table-responsive">
+        <table class="comparison-table">
+          <thead>
+            <tr>
+              <th>Marketplace</th>
+              <th>Rating</th>
+              <th>Price</th>
+              <th>Delivery</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>${rows}</tbody>
+        </table>
+      </div>
       ${integrationBanner}
     </div>
     <div class="best-price-banner">

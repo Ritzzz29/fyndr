@@ -90,6 +90,8 @@ html {
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  width: 100%;
 }
 
 body {
@@ -99,6 +101,12 @@ body {
   color: var(--dark);
   background: var(--white);
   overflow-x: hidden;
+  width: 100%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -276,7 +284,8 @@ button {
   border: 1px solid var(--gray-200);
   border-radius: var(--radius-md);
   padding: 8px 16px;
-  width: 250px;
+  width: 100%;
+  max-width: 250px;
   margin-right: var(--space-md);
   opacity: 0;
   visibility: hidden;
@@ -436,7 +445,8 @@ button {
   top: -200px;
   left: 50%;
   transform: translateX(-50%);
-  width: 800px;
+  width: 100vw;
+  max-width: 800px;
   height: 800px;
   background: radial-gradient(circle, rgba(123, 77, 255, 0.05) 0%, rgba(255, 77, 182, 0.03) 50%, transparent 70%);
   pointer-events: none;
@@ -874,8 +884,15 @@ button {
   gap: var(--space-sm);
 }
 
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
 .comparison-table {
   width: 100%;
+  min-width: 500px;
   border-collapse: separate;
   border-spacing: 0;
   border-radius: var(--radius-md);
