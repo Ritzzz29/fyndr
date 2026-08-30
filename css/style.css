@@ -490,6 +490,7 @@ button {
 
 .search-bar input {
   flex: 1;
+  min-width: 0;
   border: none;
   outline: none;
   font-family: var(--font-body);
@@ -1659,6 +1660,10 @@ button {
    RESPONSIVE — MOBILE
    ============================================ */
 @media (max-width: 768px) {
+  .header-search {
+    display: none !important;
+  }
+  
   :root {
     --space-4xl: 56px;
     --space-3xl: 40px;
