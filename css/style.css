@@ -1478,7 +1478,8 @@ button {
 }
 
 .footer-brand img {
-  height: 28px;
+  height: 60px;
+  width: auto;
 }
 
 .footer-tagline {
